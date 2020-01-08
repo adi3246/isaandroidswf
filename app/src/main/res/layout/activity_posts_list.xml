@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+       <!-- <variable
+                name="viewModel"
+                type="com.bigstapps.dodoo.moduleNotification.notificationList.NotificationViewModel" />-->
+    </data>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+
+        <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animateLayoutChanges="true">
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvNotification"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    app:data="@{viewModel.notificationForm.notificationList}"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:visibility='@{viewModel.notificationForm.loadingProgress ? View.VISIBLE : View.GONE, default = gone}'>
+
+                <include
+                        android:id="@+id/loadingView"
+                        layout="@layout/loading_view" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>
