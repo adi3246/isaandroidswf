@@ -1,11 +1,15 @@
 package com.airasia.swf.net
 
+import com.airasia.swf.BuildConfig
+import com.airasia.swf.genericResponse.BaseResponse
+import com.airasia.swf.module.engineersList.response.EngineersListResponse
 import com.google.gson.GsonBuilder
-import com.tribehired.swf.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
+import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.http.GET
 
 object Api {
 
@@ -74,10 +78,7 @@ object Api {
 
     interface ApiInterface {
 
-        /*@GET("jobs/repost/{path}")
-        fun repostJob(@Path("path", encoded = true) jobId: String): Call<BaseResponse>
-
-        @POST("wallet/topup")
-        fun topup(@Body topupPayload: TopupPayload): Call<TopupResponse>*/
+        @GET("db")
+        fun getEngineers(): Call<EngineersListResponse>
     }
 }

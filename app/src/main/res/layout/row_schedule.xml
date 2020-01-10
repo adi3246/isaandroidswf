@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+                name="model"
+                type="com.airasia.swf.module.schedule.model.ScheduleListModel" />
+
+        <variable
+            name="index"
+            type="Integer" />
+    </data>
+
+    <com.airasia.swf.customViews.SquareLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/schedule_background">
+
+        <LinearLayout
+            android:id="@+id/ll_add_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:text='@{``+index}'
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:drawableStart="@drawable/day_shift"
+                android:text='@{model.shifts[0].name}'/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:drawableStart="@drawable/night_shift"
+                android:text='@{model.shifts[1].name}'/>
+        </LinearLayout>
+    </com.airasia.swf.customViews.SquareLayout>
+</layout>

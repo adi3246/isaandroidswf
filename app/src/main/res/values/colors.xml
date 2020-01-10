@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#e32526</color>
+    <color name="colorPrimaryDark">#AF1D1E</color>
+    <color name="colorAccent">#1953FF</color>
 
+    <color name="schedule_background">#FFE5E5</color>
     <color name="dodoo_blue">#1953FF</color>
     <color name="edit_text_bottom_border">#979797</color>
     <color name="gray_color_hint">#979797</color>

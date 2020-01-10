@@ -1,7 +1,7 @@
 package com.airasia.swf.net
 
 import com.airasia.swf.ApplicationClass.Companion.contextApp
-import com.tribehired.swf.R
+import com.airasia.swf.R
 import com.airasia.swf.genericResponse.BaseResponse
 import retrofit2.Call
 import retrofit2.Callback

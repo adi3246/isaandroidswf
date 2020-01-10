@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">AirAsia SWF</string>
     <string name="try_again">Something went wrong, please try again later</string>
+    <string name="engineers">Engineers</string>
+    <string name="schedule">Schedule</string>
+    <string name="generate_schedule">Generate Schedule</string>
+    <string name="no_engineer_available">No engineer available</string>
 </resources>

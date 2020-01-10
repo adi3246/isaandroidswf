@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 
+apply plugin: 'kotlin-kapt'
+
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
@@ -32,11 +34,11 @@ android {
     productFlavors {
         staging {
             //applicationIdSuffix ".staging"
-            buildConfigField "String", "BASE_URL", "\"https://jsonplaceholder.typicode.com/\""
+            buildConfigField "String", "BASE_URL", "\"http://my-json-server.typicode.com/adi3246/isaandroidswf/\""
         }
         production {
             //applicationIdSuffix ".production"
-            buildConfigField "String", "BASE_URL", "\"https://jsonplaceholder.typicode.com/\""
+            buildConfigField "String", "BASE_URL", "\"http://my-json-server.typicode.com/adi3246/isaandroidswf/\""
         }
     }
 
@@ -62,6 +64,7 @@ android {
 
 ext {
     retrofitVersion = '2.4.0'
+    glideVersion = '4.9.0'
 }
 
 dependencies {
@@ -76,10 +79,15 @@ dependencies {
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
     implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
     api 'com.google.code.gson:gson:2.8.5'
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
-    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'androidx.appcompat:appcompat:1.0.0-alpha1'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0-alpha1'
-    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    implementation "com.github.bumptech.glide:okhttp3-integration:$glideVersion"
+    kapt "com.android.databinding:compiler:$compiler_version"
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
 }
