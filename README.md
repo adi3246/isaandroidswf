@@ -8,8 +8,8 @@ This apk with the build type (prod-debug)
 Download <a href="https://drive.google.com/file/d/1iwT6Pc07J6gKgunJgzu4zMEzL3HNwRnf/view?usp=sharing">APK</a>
 
 # Screenshots
-![](screenshot/Screenshot_20200112-001451.png)
-![](screenshot/Screenshot_20200112-001458.png)
+![](Screenshot_20200112-001451.png)
+![](Screenshot_20200112-001458.png)
 
 # Installation
 Clone this repository and import into Android Studio
