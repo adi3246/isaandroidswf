@@ -6,19 +6,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.airasia.swf.databinding.RowEngineersBinding
-import com.airasia.swf.module.engineersList.model.EngineersListModel
+import com.airasia.swf.module.engineersList.model.EngineerModel
 import com.airasia.swf.utils.BindableAdapter
 
 class EngineersListAdapter constructor(context: Context) : RecyclerView.Adapter<EngineersListAdapter.ViewHolder>(),
-    BindableAdapter<EngineersListModel> {
+    BindableAdapter<EngineerModel> {
 
     private val mInflater: LayoutInflater = LayoutInflater.from(context)
 
-    private var mData = emptyList<EngineersListModel>()
+    private var mData = emptyList<EngineerModel>()
 
     private val mContext = context
 
-    override fun setData(items: List<EngineersListModel>) {
+    override fun setData(items: List<EngineerModel>) {
         mData = items
         notifyDataSetChanged()
     }

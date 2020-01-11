@@ -6,7 +6,7 @@
 
         <variable
             name="model"
-            type="com.airasia.swf.module.engineersList.model.EngineersListModel" />
+            type="com.airasia.swf.module.engineersList.model.EngineerModel" />
     </data>
 
     <LinearLayout

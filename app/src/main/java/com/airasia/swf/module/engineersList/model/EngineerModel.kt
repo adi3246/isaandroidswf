@@ -5,7 +5,7 @@ import java.io.Serializable
 
 
 
-class EngineersListModel(): Serializable {
+class EngineerModel(): Serializable {
 
     var id: Int = 0
 

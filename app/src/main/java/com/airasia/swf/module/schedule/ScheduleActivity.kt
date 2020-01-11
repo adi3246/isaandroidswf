@@ -13,7 +13,7 @@ import com.airasia.swf.base.BaseActivity
 import com.airasia.swf.R
 import com.airasia.swf.customViews.GridSpacingItemDecoration
 import com.airasia.swf.databinding.ActivityScheduleBinding
-import com.airasia.swf.module.engineersList.model.EngineersListModel
+import com.airasia.swf.module.engineersList.model.EngineerModel
 import com.airasia.swf.module.schedule.viewModel.ScheduleViewModel
 import kotlinx.android.synthetic.main.toolbar.view.*
 
@@ -32,7 +32,9 @@ class ScheduleActivity : BaseActivity() {
         (activityBinding.toolbar as Toolbar).setNavigationOnClickListener { onBackPressed() }
 
         if (savedInstanceState == null) {
-            viewModel.setEngineersData(intent.getSerializableExtra(ApplicationConstants.ENGINEERS_LIST_MODEL) as ArrayList<EngineersListModel>)
+            viewModel.setEngineersData(
+                intent.getSerializableExtra(ApplicationConstants.ENGINEERS_LIST_MODEL) as ArrayList<EngineerModel>
+            )
 
             viewModel.generateSchedule()
         }
@@ -52,7 +54,7 @@ class ScheduleActivity : BaseActivity() {
     }
 }
 
-fun Context.scheduleIntent(engineersListModel: ArrayList<EngineersListModel>): Intent {
+fun Context.scheduleIntent(engineersListModel: ArrayList<EngineerModel>): Intent {
     return Intent(this, ScheduleActivity::class.java).apply {
         putExtra(ApplicationConstants.ENGINEERS_LIST_MODEL, engineersListModel)
     }
