@@ -8,7 +8,8 @@ This apk with the build type (prod-debug)
 Download <a href="https://drive.google.com/file/d/1iwT6Pc07J6gKgunJgzu4zMEzL3HNwRnf/view?usp=sharing">APK</a>
 
 # Screenshots
-<a href="../html-link.htm"><img src="flower.jpg" style="width:82px; height:86px" title="White flower" alt="Flower"></a>
+<img src="https://drive.google.com/open?id=1Vjk21vgBtFD20oWelxtiNeyKJKAI5Xpa">
+<img src="https://drive.google.com/open?id=1ViJmABb-uCX3CSowikjtcNarUwYTcJbL">
 
 # Installation
 Clone this repository and import into Android Studio
