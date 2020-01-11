@@ -1,6 +1,7 @@
-package com.airasia.swf
+package com.airasia.swf.base
 
 import androidx.lifecycle.ViewModel
+import com.airasia.swf.SingleLiveEvent
 
 open class BaseViewModel: ViewModel() {
 

@@ -9,14 +9,11 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import com.airasia.swf.ApplicationConstants
-import com.airasia.swf.BaseActivity
+import com.airasia.swf.base.BaseActivity
 import com.airasia.swf.R
 import com.airasia.swf.customViews.GridSpacingItemDecoration
-import com.airasia.swf.databinding.ActivityEngineersListBinding
 import com.airasia.swf.databinding.ActivityScheduleBinding
-import com.airasia.swf.module.engineersList.EngineersListAdapter
 import com.airasia.swf.module.engineersList.model.EngineersListModel
-import com.airasia.swf.module.engineersList.viewModel.EngineersListViewModel
 import com.airasia.swf.module.schedule.viewModel.ScheduleViewModel
 import kotlinx.android.synthetic.main.toolbar.view.*
 

@@ -1,7 +1,7 @@
 package com.airasia.swf.module.schedule.viewModel
 
 import com.airasia.swf.ApplicationClass
-import com.airasia.swf.BaseViewModel
+import com.airasia.swf.base.BaseViewModel
 import com.airasia.swf.R
 import com.airasia.swf.module.engineersList.model.EngineersListModel
 import com.airasia.swf.module.schedule.model.ScheduleListModel

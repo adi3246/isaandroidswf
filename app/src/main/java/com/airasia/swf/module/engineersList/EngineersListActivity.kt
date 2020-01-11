@@ -3,17 +3,15 @@ package com.airasia.swf.module.engineersList
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.widget.Toolbar
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.airasia.swf.BaseActivity
+import com.airasia.swf.base.BaseActivity
 import com.airasia.swf.R
 import com.airasia.swf.databinding.ActivityEngineersListBinding
 import com.airasia.swf.module.engineersList.viewModel.EngineersListViewModel
 import com.airasia.swf.module.schedule.scheduleIntent
-import com.airasia.swf.utils.OnSingleClickListener
 import kotlinx.android.synthetic.main.toolbar.view.*
 
 class EngineersListActivity : BaseActivity() {

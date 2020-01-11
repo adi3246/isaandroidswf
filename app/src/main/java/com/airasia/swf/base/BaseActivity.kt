@@ -1,28 +1,14 @@
-package com.airasia.swf
+package com.airasia.swf.base
 
-import android.Manifest
 import android.content.DialogInterface
-import android.content.IntentSender
 import android.content.res.Resources
 import android.graphics.Bitmap
-import android.graphics.BitmapFactory
 import android.graphics.drawable.BitmapDrawable
-import android.os.Build
 import android.os.Bundle
-import android.provider.Settings
-import android.text.TextUtils
-import android.text.format.DateFormat
 import android.util.TypedValue
-import android.view.View
-import android.view.WindowManager
 import android.widget.ImageView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.google.gson.Gson
-import java.io.IOException
-import java.net.HttpURLConnection
-import java.net.URL
-import java.util.*
 
 open class BaseActivity : AppCompatActivity(){
 

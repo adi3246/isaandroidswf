@@ -1,8 +1,6 @@
 package com.airasia.swf.module.engineersList.viewModel
 
-import android.util.Log
-import com.airasia.swf.BaseViewModel
-import com.airasia.swf.SingleLiveEvent
+import com.airasia.swf.base.BaseViewModel
 import com.airasia.swf.module.engineersList.model.EngineersListModel
 import com.airasia.swf.module.engineersList.response.EngineersListResponse
 import com.airasia.swf.net.Api
