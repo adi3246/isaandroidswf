@@ -8,11 +8,10 @@ This apk with the build type (prod-debug)
 Download <a href="https://drive.google.com/file/d/1iwT6Pc07J6gKgunJgzu4zMEzL3HNwRnf/view?usp=sharing">APK</a>
 
 # Design Pattern
-MVVM
+MVVM with data binding
 
 # Framework Used
 - AndroidX
-- Data binding (two way data binding)
 - Retrofit2
 
 # Screenshots
