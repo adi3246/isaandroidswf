@@ -3,10 +3,20 @@ package com.airasia.swf.module.engineersList.viewModel
 import com.airasia.swf.base.BaseViewModel
 import com.airasia.swf.module.engineersList.model.EngineerModel
 import com.airasia.swf.module.engineersList.response.EngineersListResponse
+import com.airasia.swf.module.schedule.model.ScheduleListModel
 import com.airasia.swf.net.Api
 import com.airasia.swf.net.BaseCallback
 
-
+/**
+ * Created by Isa Andi on 08/01/2020.
+ * <p>
+ * EngineersListViewModel where the business logic for fetching list of engineers.
+ *
+ * @author Isa Andi
+ * @version 1
+ * @see EngineerModel
+ * @see ScheduleListModel
+ */
 class EngineersListViewModel: BaseViewModel()  {
 
     val engineersListForm = EngineersListForm()
