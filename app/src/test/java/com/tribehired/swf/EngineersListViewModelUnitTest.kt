@@ -1,6 +1,6 @@
 package com.tribehired.swf
 
-import com.airasia.swf.module.engineersList.viewModel.EngineersListViewModel
+import com.airasia.swf.module.engineersList.EngineersListViewModel
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -12,7 +12,8 @@ import org.junit.Assert.*
  */
 class EngineersListViewModelUnitTest {
 
-    private val engineersListViewModel = EngineersListViewModel()
+    private val engineersListViewModel =
+        EngineersListViewModel()
 
     @Test
     fun addition_isCorrect() {

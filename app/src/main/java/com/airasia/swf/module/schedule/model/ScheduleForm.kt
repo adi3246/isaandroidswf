@@ -1,4 +1,4 @@
-package com.airasia.swf.module.schedule.viewModel
+package com.airasia.swf.module.schedule.model
 
 import androidx.databinding.Bindable
 import com.airasia.swf.BR

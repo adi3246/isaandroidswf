@@ -8,7 +8,7 @@
         <import type="android.view.View"/>
         <variable
             name="viewModel"
-            type="com.airasia.swf.module.schedule.viewModel.ScheduleViewModel" />
+            type="com.airasia.swf.module.schedule.ScheduleViewModel" />
     </data>
 
     <LinearLayout android:orientation="vertical"

@@ -1,4 +1,4 @@
-package com.airasia.swf.module.engineersList.viewModel
+package com.airasia.swf.module.engineersList.model
 
 
 import androidx.databinding.Bindable

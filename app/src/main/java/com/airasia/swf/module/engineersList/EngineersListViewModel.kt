@@ -1,7 +1,8 @@
-package com.airasia.swf.module.engineersList.viewModel
+package com.airasia.swf.module.engineersList
 
 import com.airasia.swf.base.BaseViewModel
 import com.airasia.swf.module.engineersList.model.EngineerModel
+import com.airasia.swf.module.engineersList.model.EngineersListForm
 import com.airasia.swf.module.engineersList.response.EngineersListResponse
 import com.airasia.swf.module.schedule.model.ScheduleListModel
 import com.airasia.swf.net.Api
@@ -19,7 +20,8 @@ import com.airasia.swf.net.BaseCallback
  */
 class EngineersListViewModel: BaseViewModel()  {
 
-    val engineersListForm = EngineersListForm()
+    val engineersListForm =
+        EngineersListForm()
 
     fun fetchEngineersList(){
 

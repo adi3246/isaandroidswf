@@ -14,7 +14,6 @@ import com.airasia.swf.R
 import com.airasia.swf.customViews.GridSpacingItemDecoration
 import com.airasia.swf.databinding.ActivityScheduleBinding
 import com.airasia.swf.module.engineersList.model.EngineerModel
-import com.airasia.swf.module.schedule.viewModel.ScheduleViewModel
 import kotlinx.android.synthetic.main.toolbar.view.*
 
 class ScheduleActivity : BaseActivity() {

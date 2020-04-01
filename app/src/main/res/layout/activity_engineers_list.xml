@@ -6,7 +6,7 @@
         <import type="android.view.View"/>
         <variable
                 name="viewModel"
-                type="com.airasia.swf.module.engineersList.viewModel.EngineersListViewModel" />
+                type="com.airasia.swf.module.engineersList.EngineersListViewModel" />
     </data>
 
     <LinearLayout

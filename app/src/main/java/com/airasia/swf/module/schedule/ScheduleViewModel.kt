@@ -1,9 +1,10 @@
-package com.airasia.swf.module.schedule.viewModel
+package com.airasia.swf.module.schedule
 
 import com.airasia.swf.ApplicationClass
 import com.airasia.swf.base.BaseViewModel
 import com.airasia.swf.R
 import com.airasia.swf.module.engineersList.model.EngineerModel
+import com.airasia.swf.module.schedule.model.ScheduleForm
 import com.airasia.swf.module.schedule.model.ScheduleListModel
 import com.airasia.swf.module.schedule.model.Shift
 import java.util.*
