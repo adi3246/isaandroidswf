@@ -3,8 +3,6 @@ package com.airasia.swf.module.engineersList.model
 import com.airasia.swf.module.engineersList.response.EngineersListResponse
 import java.io.Serializable
 
-
-
 class EngineerModel(): Serializable {
 
     var id: Int = 0

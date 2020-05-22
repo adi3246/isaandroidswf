@@ -28,7 +28,7 @@ class EngineersListViewModel: BaseViewModel()  {
         engineersListForm.loadingProgress = true
 
         Api.getApi()?.getEngineers()!!.enqueue(
-            BaseCallback(object :
+            BaseCallback<EngineersListResponse>(object :
                 BaseCallback.OnCallback {
                 override fun status(success: Boolean, data: Any) {
                     engineersListForm.loadingProgress = false

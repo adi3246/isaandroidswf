@@ -10,6 +10,7 @@ import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
+import retrofit2.http.POST
 
 object Api {
 
@@ -80,5 +81,8 @@ object Api {
 
         @GET("db")
         fun getEngineers(): Call<EngineersListResponse>
+
+        @POST("transporter/apply")
+        fun applyTransporterChecking(): Call<SignUpTransporterBaseResponse>
     }
 }
